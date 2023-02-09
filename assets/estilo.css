@@ -1,0 +1,285 @@
+body {
+    background-color: azure;
+}
+
+.top-header {
+    height: 100vh;
+    background: linear-gradient(45deg, #0000006e, #0000006e), url(../imagens/bg-heander.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    animation: heander 25s infinite;
+}
+
+.top-redes {
+    display: flex;
+}
+
+.redes-item {
+    width: 50px;
+    filter: grayscale(1);
+    transition: 0.3s;
+}
+
+.redes-item:hover {
+    filter: grayscale(0);
+    transition: 0.3s;
+}
+
+@keyframes heander {
+    0% {
+        background-position: left;
+    }
+
+    50% {
+        background-position: right;
+    }
+
+    100% {
+        background-position-x: left;
+    }
+}
+
+.top-nav {
+    background: azure;
+    padding: 5px 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo {
+    color: #8800ff;
+    font-weight: bold;
+}
+
+.row-top-header {
+    --bs-gutter-x: -5.5rem !important;
+    height: 90vh;
+    align-items: center;
+}
+
+.foto-top-header {
+    height: 350px;
+    width: 350px;
+    padding: 1%;
+    background: azure;
+    border-radius: 500px;
+    margin-left: 160px;
+    transition: 1s;
+}
+
+.foto-top {
+    width: 100%;
+    border-radius: 100%;
+}
+
+/* .foto-top-header .div-spin:hover {
+    animation: cometa-foto 4s infinite;
+    border-top: 5px solid #8800ff;
+    transition: 1s;
+    width: 100%;
+    border-radius: 100%;
+
+} */
+
+@keyframes cometa-foto {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.a-nav {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.a-nav:hover {
+    color: #923292;
+    transition: 0.3s;
+}
+
+.txt-top-home {
+    color: aliceblue;
+}
+
+.txt-top-home-titulo {
+    color: #8800ff;
+}
+
+.txt-sobremim {
+    font-size: 20px;
+    color: black;
+}
+
+.principal-titulo-portifolio {
+    color: #8800ff;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.card-port {
+    background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+    padding: 15px;
+    border-radius: 20px;
+    margin: 0px 40px;
+    filter: brightness(0.5);
+    transition: 1s;
+}
+
+.card-port:hover {
+    filter: brightness(1);
+    transition: 1s;
+}
+
+.foto-port {
+    margin: auto;
+    width: 130px;
+}
+
+.titulo-port {
+    text-align: center;
+    color: snow;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.desc-port {
+    color: white;
+    text-align: justify;
+}
+
+.bg-port {
+    background: linear-gradient(45deg, #0000006e, #0000006e), url(../imagens/bg-heander.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    animation: heander 25s infinite;
+}
+
+.nav {
+    margin-left: auto !important;
+    width: 76% !important;
+}
+
+
+.hab-imgs {
+    background-color: azure;
+    width: 100%;
+    align-items: center;
+}
+
+.hab-imgs-container {
+    display: flex;
+    margin: 0 100px;
+}
+
+.descricao-html {
+    display: none;
+    background-color: azure;
+    padding: 0 40px 80px;
+}
+
+.item-html:hover .descricao-html {
+    display: inline;
+    position: absolute;
+    right: 8%;
+    left: 50%;
+}
+
+.descricao-css {
+    display: none;
+    background-color: azure;
+    padding: 0 40px 80px;
+}
+
+.item-css:hover .descricao-css {
+    display: inline;
+    position: absolute;
+    right: 8%;
+    left: 50%;
+}
+
+.descricao-js {
+    display: none;
+    background-color: azure;
+    padding: 0 40px 80px;
+}
+
+.item-js:hover .descricao-js {
+    display: inline;
+    position: absolute;
+    right: 8%;
+    left: 50%;
+}
+
+.img-hab {
+    width: 119px;
+    height: 108px;
+    border-bottom: solid 3px azure;
+    padding: 5px;
+    filter: blur(1px);
+}
+
+.a-img-hab:hover {
+    filter: blur(0px);
+    animation: anim-hover-hab 2s infinite;
+}
+
+@keyframes anim-hover-hab {
+    0%, 100% {
+        border-bottom: solid 3px;
+        border-image: linear-gradient(131deg, rgb(178, 18, 241), rgb(87, 0, 168)) 1;
+    }
+
+    50% {
+        border-bottom: solid 3px;
+        border-image: linear-gradient(226deg, rgb(87, 0, 168), rgb(178, 18, 241)) 1;
+    }
+}
+
+.line {
+    width: 60px;
+    height: 10px;
+    background-color: black;
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+
+.mobile-screen-menu {
+    display: block;
+}
+
+.desktop-screen-menu {
+    display: none;
+}
+
+#mobile-screen-menu.click{
+background: #4a00e0;
+transform: rotateZ(300deg);
+}
+
+
+
+@media screen and (min-width: 1350px) {
+    .mobile-screen-menu {
+        display: none;
+    }
+
+    .desktop-screen-menu {
+        display: block;
+    }
+
+    
+}
+
+@media screen and (max-width: 1350px) {
+    .foto-top-header-mobile{
+        height: 250px;
+        width: 250px;
+        margin-left: 0;
+        margin: 15px 0px;
+    }
+}
+
+
